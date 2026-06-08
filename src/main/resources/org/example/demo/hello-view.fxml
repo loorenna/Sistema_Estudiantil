@@ -157,7 +157,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label fx:id="lblRegistro" layoutX="20.0" layoutY="448.0" prefHeight="27.0" prefWidth="582.0" text="Registro:" textFill="#a8b2d8">
+      <Label fx:id="lblRegistro" layoutX="20.0" layoutY="448.0" prefHeight="27.0" prefWidth="644.0" text="Registro:" textFill="#a8b2d8">
          <font>
             <Font name="Monospaced Regular" size="10.0" />
          </font>
