@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="618.0" style="-fx-background-color: #1a1a2e;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Controlador">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="370.0" prefWidth="292.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px; -fx-padding: 13px;">
+         <children>
+            <Label layoutX="14.0" layoutY="25.0" text="Nombre" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txtNombre" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="238.0" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-text-fill: #ccd6f6;">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Label layoutX="14.0" layoutY="68.0" prefHeight="17.0" prefWidth="37.0" text="Edad" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txtEdad" layoutX="14.0" layoutY="86.0" prefHeight="27.0" prefWidth="238.0" style="-fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-border-color: #533483; -fx-text-fill: #ccd6f6;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Label layoutX="15.0" layoutY="115.0" text="Carrera" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbCarrera" layoutX="15.0" layoutY="132.0" prefHeight="27.0" prefWidth="238.0" promptText="Seleccione" style="-fx-background-color: #0d0d1a; -fx-border-color: #533483; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-text-background-color: #ccd6f6; -fx-control-inner-background: #0d0d1a;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label layoutX="15.0" layoutY="162.0" text="Semestre" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbSemestre" layoutX="14.0" layoutY="179.0" prefHeight="27.0" prefWidth="238.0" promptText="Seleccione" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-text-background-color: #ccd6f6; -fx-control-inner-background: #0d0d1a;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label layoutX="14.0" layoutY="208.0" text="Materias favoritas" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ListView fx:id="listaMaterias" layoutX="13.0" layoutY="226.0" prefHeight="70.0" prefWidth="238.0" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-control-inner-background: #0d0d1a;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
+            <Button layoutX="14.0" layoutY="304.0" mnemonicParsing="false" onAction="#registrarEncuesta" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #0f3460; -fx-border-color: #e94560; -fx-border-radius: 4px;" text="Registrar" textFill="#e94560">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="135.0" layoutY="304.0" mnemonicParsing="false" onAction="#limpiarEncuesta" style="-fx-background-color: #2d2d44; -fx-border-color: #a8b2d8; -fx-border-radius: 4px;" text="Limpiar" textFill="#a8b2d8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Button>
+            <Label fx:id="lblMensaje" layoutX="8.0" layoutY="347.0" prefHeight="17.0" prefWidth="256.0" textFill="#00ff88">
+               <font>
+                  <Font name="Monospaced Regular" size="11.0" />
+               </font></Label>
+            <Label layoutX="13.0" layoutY="6.0" text="ENCUESTA ESTUDIANTIL" textFill="#e94560">
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="311.0" layoutY="54.0" prefHeight="392.0" prefWidth="293.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px;">
+         <children>
+            <Label layoutX="19.0" layoutY="30.0" text="Número 1" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txtNum1" layoutX="17.0" layoutY="46.0" prefHeight="25.0" prefWidth="238.0" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-text-fill: #ccd6f6;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></TextField>
+            <Label layoutX="18.0" layoutY="72.0" text="Número 2" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txtNum2" layoutX="17.0" layoutY="87.0" prefHeight="27.0" prefWidth="238.0" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-width: 1px; -fx-border-radius: 4px; -fx-text-fill: #ccd6f6;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+            <Label layoutX="17.0" layoutY="115.0" text="Operación" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbOperacion" layoutX="16.0" layoutY="132.0" prefHeight="27.0" prefWidth="238.0" promptText="Seleccione" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-text-background-color: #ccd6f6; -fx-control-inner-background: #0d0d1a;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label layoutX="16.0" layoutY="161.0" text="Resultado" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txtResultado" layoutX="15.0" layoutY="177.0" prefHeight="27.0" prefWidth="238.0" style="-fx-border-color: #00ff88; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-font-style: #00ff88;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font></TextField>
+            <Button layoutX="16.0" layoutY="208.0" mnemonicParsing="false" onAction="#calcular" prefHeight="17.0" prefWidth="85.0" style="-fx-padding: 5px 10px; -fx-border-color: #7a5abf; -fx-background-color: #533483; -fx-border-radius: 4px;" text="Calcular" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="108.0" layoutY="208.0" mnemonicParsing="false" onAction="#limpiarCalculo" prefHeight="25.0" prefWidth="85.0" style="-fx-padding: 5px 10px; -fx-background-color: #2d2d44; -fx-border-color: #a8b2d8; -fx-border-radius: 4px;" text="Limpiar" textFill="#a8b2d8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="18.0" layoutY="258.0" text="Historial" textFill="#8892b0">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font></Label>
+            <ListView fx:id="listaHistorial" layoutX="17.0" layoutY="274.0" prefHeight="79.0" prefWidth="238.0" style="-fx-border-color: #533483; -fx-background-color: #0d0d1a; -fx-border-radius: 4px; -fx-border-width: 1px; -fx-control-inner-background: #0d0d1a;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
+            <Button layoutX="18.0" layoutY="357.0" mnemonicParsing="false" onAction="#borrarHistorial" style="-fx-background-color: #4a0a0a; -fx-border-color: #ff6b6b; -fx-border-radius: 4px;" text="Borrar Historial" textFill="#ff6b6b">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="lblUltimoCalculo" layoutX="18.0" layoutY="240.0" prefHeight="15.0" prefWidth="256.0" text="Último cálculo:" textFill="#00ff88">
+               <font>
+                  <Font name="Monospaced Regular" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="6.0" text="CALCULADORA MATEMÁTICA" textFill="#e94560">
+               <font>
+                  <Font name="Monospaced Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblRegistro" layoutX="20.0" layoutY="448.0" prefHeight="12.0" prefWidth="582.0" text="Registro:" textFill="#a8b2d8">
+         <font>
+            <Font name="Monospaced Regular" size="10.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-5.0" prefHeight="40.0" prefWidth="628.0" style="-fx-background-color: linear-gradient(to right, #16213e, #0f3460, #533483);">
+         <children>
+            <Label layoutX="195.0" layoutY="10.0" prefHeight="21.0" prefWidth="238.0" text="SISTEMA ESTUDIANTIL" textFill="#e94560">
+               <font>
+                  <Font name="Monospaced Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
