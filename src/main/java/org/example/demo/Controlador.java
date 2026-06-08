@@ -138,19 +138,19 @@ public class Controlador {
             else if(op.equals("Resta"))
                 resultado = n1 - n2;
 
-            else if(op.equals("Multiplicacion"))
+            else if(op.equals("Multiplicación"))
                 resultado = n1 * n2;
 
-            else if(op.equals("Division"))
+            else if(op.equals("División"))
                 resultado = n1 / n2;
 
             else if(op.equals("Potencia"))
                 resultado = Math.pow(n1,n2);
 
-            else if(op.equals("Raiz"))
+            else if(op.equals("Raíz"))
                 resultado = Math.sqrt(n1);
 
-            else if(op.equals("Modulo"))
+            else if(op.equals("Módulo"))
                 resultado = n1 % n2;
 
             else if(op.equals("Promedio"))

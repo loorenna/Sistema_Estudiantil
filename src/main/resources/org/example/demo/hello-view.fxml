@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="618.0" style="-fx-background-color: #1a1a2e;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Controlador">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="678.0" style="-fx-background-color: #1a1a2e;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Controlador">
    <children>
-      <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="370.0" prefWidth="292.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px; -fx-padding: 13px;">
+      <AnchorPane layoutX="14.0" layoutY="54.0" prefHeight="392.0" prefWidth="321.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px; -fx-padding: 13px;">
          <children>
             <Label layoutX="14.0" layoutY="25.0" text="Nombre" textFill="#8892b0">
                <font>
@@ -76,7 +76,7 @@
                </font>
             </Label>
          </children></AnchorPane>
-      <AnchorPane layoutX="311.0" layoutY="54.0" prefHeight="392.0" prefWidth="293.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px;">
+      <AnchorPane layoutX="341.0" layoutY="54.0" prefHeight="392.0" prefWidth="321.0" style="-fx-background-color: #16213e; -fx-border-color: #533483; -fx-border-width: 1px; -fx-border-radius: 8px;">
          <children>
             <Label layoutX="19.0" layoutY="30.0" text="Número 1" textFill="#8892b0">
                <font>
@@ -157,14 +157,14 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label fx:id="lblRegistro" layoutX="20.0" layoutY="448.0" prefHeight="12.0" prefWidth="582.0" text="Registro:" textFill="#a8b2d8">
+      <Label fx:id="lblRegistro" layoutX="20.0" layoutY="448.0" prefHeight="27.0" prefWidth="582.0" text="Registro:" textFill="#a8b2d8">
          <font>
             <Font name="Monospaced Regular" size="10.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="-5.0" prefHeight="40.0" prefWidth="628.0" style="-fx-background-color: linear-gradient(to right, #16213e, #0f3460, #533483);">
+      <AnchorPane layoutX="-5.0" prefHeight="40.0" prefWidth="686.0" style="-fx-background-color: linear-gradient(to right, #16213e, #0f3460, #533483);">
          <children>
-            <Label layoutX="195.0" layoutY="10.0" prefHeight="21.0" prefWidth="238.0" text="SISTEMA ESTUDIANTIL" textFill="#e94560">
+            <Label layoutX="224.0" layoutY="9.0" prefHeight="21.0" prefWidth="238.0" text="SISTEMA ESTUDIANTIL" textFill="#e94560">
                <font>
                   <Font name="Monospaced Bold" size="18.0" />
                </font>
